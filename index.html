@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/book.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/book.png"
+      sizes="192x192"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>تَبَيَّنَ</title>
+  </head>
+  <body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/book.png" alt="تَبَيَّنَ" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">عالم التقنية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">مجتمعات رقمية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">مهارات حياتية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">تغذية بصرية</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Header-->
+    <header>
+      <div class="container">
+        <div class="contactHeader">
+          <h1 class="display-1">نثري عالمك</h1>
+          <p class="lead">تعلم المزيد 🚀</p>
+        </div>
+      </div>
+    </header>
+    <!--Section -->
+    <section class="main">
+      <div class="container">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                اثراء في عالم التقنية 🖥
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <!--row-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <a href="https://satr.codes/">
+                        <div class="card bg-dark text-white">
+                          <img
+                            src="https://pbs.twimg.com/media/E9pn5yjXsAUxT5z.jpg"
+                            class="card-img imageCardOne"
+                            alt="..."
+                          />
+                          <div class="card-img-overlay">
+                            <h5 class="card-title lead">منصة سطر</h5>
+                            <!-- <p class="card-text lead">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <a href="https://coderhub.sa/">
+                        <div class="card bg-dark text-white">
+                          <img
+                            src="data:image/jpeg;base64,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"
+                            class="card-img imageCardOne"
+                            alt="..."
+                          />
+                          <div class="card-img-overlay">
+                            <h5 class="card-title lead">
+                              كودرهب عالم التحديات
+                            </h5>
+                            <!-- <p class="card-text lead">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <a href="https://bootcamp.sa/">
+                        <div class="card bg-dark text-white">
+                          <img
+                            src="https://avatars.githubusercontent.com/u/92674658?s=280&v=4"
+                            class="card-img imageCardOne"
+                            alt="..."
+                          />
+                          <div class="card-img-overlay">
+                            <h5 class="card-title text-dark lead">
+                              اكاديمية طويق
+                            </h5>
+                            <!-- <p class="card-text lead">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                مجتمعات رقمية 📲
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <!--row-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <a href="https://t.me/tuwaiq_codes1">
+                        <div class="card bg-dark text-white">
+                          <img
+                            src="https://cdn4.telegram-cdn.org/file/A2py6nDAB8-fZwovnwQospPm8Evk3zqL0fGTuqHOYo4ugRgVCln79tYpCA9gV5UKyJtA4wyPqJc1s33mJJN9aDZ7V3rpQdVz8yNSD7c_hazXPb6ijfamQYoD6zjQ63hnGDZMX2JCMJf2hdjeJRf5rHZ_yT-xPX5wAMaFRbn7oWtCne003nY29hZWXLS197FOksyAkQbPHniS-Jy-TwJaUednfMldGToQRozwEIUcGMMrog5C5P42YyD2V8PI_W88_kCQcl83SRXAr7qsHowsfjtQiml9KD9XBjw4WIMYqJ1SwEHWt6o9vzdkqaHdD4iuaKnV9MjNC8MrfI6975-_RQ.jpg"
+                            class="card-img imageCardOne"
+                            alt="..."
+                          />
+                          <div class="card-img-overlay">
+                            <h5 class="card-title lead">مجتمعات سطر</h5>
+                            <!-- <p class="card-text lead">
+                            This is a wider card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                          </p> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <a href="https://t.me/pro2dev">
+                        <div class="card bg-dark text-white">
+                          <img
+                            src="assets/img/imageCard1.jpg"
+                            class="card-img imageCardOne"
+                            alt="..."
+                          />
+                          <div class="card-img-overlay">
+                            <h5 class="card-title lead">
+                              مجتمعات البرمجة والتطوير
+                            </h5>
+                            <!-- <p class="card-text lead">
+                            This is a wider card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                          </p> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <a href="https://t.me/nitacademy">
+                        <div class="card bg-dark text-white">
+                          <img
+                            src="assets/img/imageCard2.jpeg"
+                            class="card-img imageCardOne"
+                            alt="..."
+                          />
+                          <div class="card-img-overlay">
+                            <h5 class="card-title text-dark lead">
+                              الأكاديمية الوطنية لتقنية المعلومات
+                            </h5>
+                            <!-- <p class="card-text lead">
+                            This is a wider card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                          </p> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                مهارات حياتية 🪂
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <!--row-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <a
+                        href="https://www.edraak.org/programs/course-v1:HSD+TDE101+2020_T2/"
+                      >
+                        <div class="card bg-dark text-white">
+                          <img
+                            src="https://edraak-marketing-uploads.edraak.org/Courses/Designers-Eye-Course1_1.jpg"
+                            class="card-img imageCardOne"
+                            alt="..."
+                          />
+                          <div class="card-img-overlay">
+                            <h5 class="card-title text-dark lead">
+                              دورة عين المصمم
+                            </h5>
+                            <!-- <p class="card-text lead">
+                            This is a wider card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                          </p> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <a href="https://www.edraak.org/programs/course/hd-v1/">
+                        <div class="card bg-dark text-white">
+                          <img
+                            src="https://edraak-marketing-uploads.edraak.org/Courses/Home-Styling-Course-Image.jpg"
+                            class="card-img imageCardOne"
+                            alt="..."
+                          />
+                          <div class="card-img-overlay">
+                            <h5 class="card-title text-dark lead">
+                              دورة تصميم منزلي
+                            </h5>
+                            <!-- <p class="card-text lead">
+                            This is a wider card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                          </p> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <a
+                        href="https://www.edraak.org/programs/course-v1:edraak+FD102+T1_2021/"
+                      >
+                        <div class="card bg-dark text-white">
+                          <img
+                            src="https://edraak-marketing-uploads.edraak.org/Courses/Fashion-Design-Course-Image1.jpg"
+                            class="card-img imageCardOne"
+                            alt="..."
+                          />
+                          <div class="card-img-overlay">
+                            <h5 class="card-title text-dark lead">
+                              دورة تصميم الأزياء
+                            </h5>
+                            <!-- <p class="card-text lead">
+                            This is a wider card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                          </p> -->
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--end row-->
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree-4"
+                aria-expanded="false"
+                aria-controls="collapseThree-4"
+              >
+                تغذية بصرية 📸
+              </button>
+            </h2>
+            <div
+              id="collapseThree-4"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <!--api contact-->
+                <div class="container">
+                  <div class="container">
+                    <input
+                      type="text"
+                      class="input form-control"
+                      placeholder=" تصفح الصور 🔎"
+                    />
+                    <button class="search_btn btn btn-outline-dark">
+                      ابحث
+                    </button>
+                    <div class="display_images"></div>
+                    <button class="showmore btn btn-outline-dark">
+                      الـمـزيـد
+                    </button>
+                  </div>
+                </div>
+                <!--api contact-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3">
+        <p class="lead text-footer">نثري عالمك</p>
+      </div>
+    </footer>
+    <!--Script-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/storage.js"></script>
+  </body>
+</html>

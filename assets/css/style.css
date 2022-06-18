@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap");
+:root {
+  --mainColor: #3ab0ff;
+  --lightColor: #f9f2ed;
+  --orangeColor: #ffb562;
+  --redColor: #f87474;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+  text-align: right;
+  user-select: none;
+}
+.contactHeader {
+    text-align: center;
+    margin-top: 90px;
+}
+.main{
+  margin-top: 90px;
+}
+.imageCardOne {
+  width: 100%;
+  height: 250px;
+}
+/*Show image section*/
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #f9fafc;
+  width: 40%;
+  margin-left: 25%;
+}
+.display_images {
+  width: 80%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+.display_images img {
+  width: 90%;
+  border-radius: 5px;
+  height: 240px;
+  cursor: pointer;
+}
+figcaption {
+  font-weight: bold;
+  font-size: 15px;
+}
+.search_btn {
+  margin-top: 15px !important;
+  margin: 0 auto;
+  display: block;
+}
+.showmore {
+  margin: 0 auto;
+  display: block;
+}
+footer {
+  height: 150px !important;
+  margin-top: 40px;
+  text-align: center;
+}
+.text-footer {
+  color: #000;
+  margin-top: 50px;
+}
+.card {
+  margin-top: 20px;
+}
